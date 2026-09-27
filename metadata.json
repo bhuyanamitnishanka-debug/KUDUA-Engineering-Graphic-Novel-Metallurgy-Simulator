@@ -1,0 +1,8 @@
+{
+  "name": "KUDUA: Engineering Graphic Novel & Metallurgy Simulator",
+  "description": "An interactive animated engineering graphic novel and technical lab chronicling the Tata InnoVerse Autonomous Hot Metal Sampling System and Hybrid Kudua Blast Furnace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

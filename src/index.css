@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-epic: 'Cinzel', serif;
+    --font-comic: 'Chakra Petch', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-epic {
+  font-family: var(--font-epic);
+}
+
+.font-comic {
+  font-family: var(--font-comic);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Comic & Blueprint patterns */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.halftone-dots {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1.2px, transparent 0);
+  background-size: 8px 8px;
+}
+
+.comic-ink-border {
+  border: 3px solid #1c1917;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.85);
+}
+
+.comic-ink-border-accent {
+  border: 3px solid #ea580c;
+  box-shadow: 4px 4px 0px 0px #9a3412;
+}
+
+.comic-tag {
+  transform: skewX(-6deg);
+  letter-spacing: 0.05em;
+  font-family: var(--font-comic);
+}
+
+/* Speech bubble clip-path pointers */
+.bubble-tail-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 28px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1c1917;
+}
+
+/* Book 3D spine and page turning */
+.perspective-book {
+  perspective: 1600px;
+}
+
+.book-shadow {
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Forge Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
